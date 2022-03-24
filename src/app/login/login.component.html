@@ -1,0 +1,18 @@
+<body>
+    <form class="formulario">
+    <h1>Login</h1>
+    <div class="contenedor">
+         <div class="input-contenedor">
+           <input  ([ngModel])="this.log_user.user"  type="text" id="nuser"  name="nuser" placeholder="Ingrese Nombre de Usuario" class="fondo">
+         </div>
+         <div class="input-contenedor">
+           <i class="fas fa-key"></i>
+           <input  ([ngModel])="this.log_user.pssw"   type="password" id="pssw" name="pssw" placeholder="Ingrese su Contraseña">
+         </div>
+         <button type="submit" id="boton" (click)="inicio()"  class="button">Ingresar</button>
+         <!--<button class="button" (click)="login()">login</button>-->                   
+         <p>¿Aún no tienes cuenta?</p>
+         <p>Crea tu cuenta</p>
+         <p><a class="ttp" onclick="location.href='/register'">Registrate </a></p>
+    </div>
+    </form>

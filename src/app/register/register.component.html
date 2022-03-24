@@ -1,0 +1,29 @@
+<body>
+    <form class="formulario" action="/register" method="post">
+       <h1>Registrate</h1>
+        <div class="contenedor">
+        <div class="input-contenedor">
+            <i class="fas fa-user icon"></i>
+            <input type="text" placeholder="Nombre" formControlName="nombre">
+            </div>
+            <div class="input-contenedor">
+            <i class="fas fa-envelope icon"></i>
+            <input type="text" placeholder="Correo" formControlName="correo">
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" placeholder="Nombre de Usuario" formControlName="nombreuser">
+                </div>
+                <div class="input-contenedor">
+                    <i class="fas fa-envelope icon"></i>
+                    <input type="text" placeholder="Genero    m/f " formControlName="genero">
+                    </div>
+            <div class="input-contenedor">
+           <i class="fas fa-key icon"></i>
+            <input type="password" placeholder="Contraseña" formControlName="pass">
+            </div>
+            <input type="submit" value="Registrate" class="button">
+            <p><a class="ttp" onclick="location.href='/login'">Iniciar Sesión </a></p>
+        </div>
+       </form>
+   </body>
